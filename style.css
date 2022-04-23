@@ -1,0 +1,100 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+:root {
+    --contrast-alpha: rgba(255,255,255,.5);
+    --contrast: #fdfcfe;
+    --grey2: #a9a9a9;
+    --grey3: #34373c;
+    --base: #1f1f24;
+    --red: #FF6A67;
+    --accent:rgb(82, 190, 172);
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: raleway,system-ui;
+}
+
+body{
+  background-color: var(--base);
+  color: var(--contrast);
+  font-family: raleway,system-ui;
+}
+
+header{
+  position: sticky;
+  z-index: 10;
+  padding-top: 1.5 rem;
+  padding-bottom: 1.5 rem;
+}
+
+nav{
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul{
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+  font-weight: bold;
+}
+
+.font-serif{
+  font-family: Libre Baskerville,Georgia;
+}
+
+.navMenu a {
+  color: var(--contrast);
+  text-decoration: none;  
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;  
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: var(--red);
+}
+
+main{
+  max-width: 80ch;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#hero > h1{
+  font-size: 2.25rem;
+  line-height: 0.5rem;
+}
+
+#hero > h4{
+  font-size: 1.5rem;  
+  font-weight: 300;
+}
