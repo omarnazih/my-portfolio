@@ -20,6 +20,10 @@
   border-color: currentColor;
 }
 
+img{
+  max-width: 100%;
+}
+
 h1 {
   display: block;
   font-size: 2em;
@@ -119,6 +123,10 @@ a{
   text-decoration: none;
 }
 
+.mb-2{
+  margin-bottom: 2rem;
+}
+
 .text-accent{
   color: var(--accent)
 }
@@ -126,6 +134,10 @@ a{
 .text-sm {
   font-size: .875rem;
   line-height: 1.25rem;
+}
+
+.font-medium{
+  font-weight: 600;
 }
 
 .block {
@@ -147,4 +159,37 @@ a{
 
 .text-grey2{
   color: var(--grey2);
+}
+
+#blog-sec{
+  margin-bottom: 6rem;
+}
+
+#projects-sec{
+  margin-bottom: 6rem;
+}
+
+#projects-sec li{
+  background-color: var(--red);
+  display: flex;
+  border-radius: 10px;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 400px;
+  width: 400px;
+}
+
+#projects-sec img{  
+  height: 300px;
+  width: 300px;
+}
+
+#connect-sec a{
+  text-decoration: underline;
+  font-family: Libre Baskerville,Georgia;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  opacity: .8;
 }
